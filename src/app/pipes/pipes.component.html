@@ -1,0 +1,20 @@
+<p>
+  pipes works!
+</p>
+This is pipes practice, titled {{ title }}. Someone owes me {{ amount }}.
+<br />Someone owes me {{ amount | currency }}. Someone owes me
+{{ amount | currency: "INR" }}. Someone owes me {{ amount | currency: "EUR" }}.
+<br />
+Someone owes me a toggled {{ toggledAmount | currency: format }}.
+<button (click)="toggleINRandUSD()">Toggle Currency</button>
+
+<br />
+"| currency" is an inbuilt pipe. Common layouts for pipes include {/{
+YOURVARIABLE | pipe1:option1:option2:option3...|
+pipe2:option1:option2:option3..... }/} FOR EXAMPLE: `{/{ value_expression |
+currency [ : currencyCode [ : display [ : digitsInfo [ : locale ] ] ] ] }/}`
+<br />
+
+This is a test string.
+<br /><br /><br />
+{{ "This is another test string." | reverse: true:"singlequote" }}

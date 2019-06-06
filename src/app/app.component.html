@@ -1,20 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-Hello world. This is pipes practice, titled {{ title }}. Someone owes me
-{{ amount }}. <br />Someone owes me {{ amount | currency }}. Someone owes me
-{{ amount | currency: "INR" }}. Someone owes me {{ amount | currency: "EUR" }}.
-<br />
-Someone owes me a toggled {{ toggleAmount | currency: format }}.
-<button (click)="toggleINRandUSD()">Toggle Currency</button>
-
+Hello world. This is App component and will be here. forever.
+<nav>
+  <a routerLink="/directives">Directives</a>
+  <a routerLink="/pipes">Pipes</a>
+</nav>
 <router-outlet></router-outlet>
-<br />
-"| currency" is an inbuilt pipe. Common layouts for pipes include {/{
-YOURVARIABLE | pipe1:option1:option2:option3...|
-pipe2:option1:option2:option3..... }/} FOR EXAMPLE: `{/{ value_expression |
-currency [ : currencyCode [ : display [ : digitsInfo [ : locale ] ] ] ] }/}`
-<br />
-
-This is a test string.
-<br /><br /><br />
-{{ "This is another test string." | reverse: true:"singlequote" }}

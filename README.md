@@ -1,4 +1,4 @@
-This project is done following the angular course on free code camp (https://www.youtube.com/watch?v=2OHbjep_WjQ), starting with video 27 "Pipes".
+This project is done following the angular course on free code camp (https://www.youtube.com/watch?v=2OHbjep_WjQ), starting with video 27 "Pipes". This project includes the "Directives" portion of the same tutorial.
 
 To generate a pipe, run `ng generate pipe`
 
