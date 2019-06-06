@@ -1,5 +1,7 @@
 This project is done following the angular course on free code camp (https://www.youtube.com/watch?v=2OHbjep_WjQ), starting with video 27 "Pipes".
 
+To generate a pipe, run `ng generate pipe`
+
 # AngularPipes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
