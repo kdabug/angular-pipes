@@ -1,3 +1,39 @@
 <p>
   directives works!
 </p>
+<h1>Conditionals with ngIf</h1>
+<div *ngIf="2 > 1">Yes, two is greater than one</div>
+<div *ngIf="2 < 1">Yes, two is less than one</div>
+<div *ngIf="someRandomVariable">Yes, someRandomVariable is true</div>
+<div *ngIf="someRandomVariable">
+  This should not show if someRandomVariable is false.
+</div>
+
+<div *ngIf="someRandomVariable">Yes!!!</div>
+<div *ngIf="!someRandomVariable">NO!!!</div>
+<div *ngIf="someRandomVariable; then trueBlock; else otherBlockContent"></div>
+<ng-template #falseBlock><h1>NO!</h1></ng-template>
+<ng-template #trueBlock><h1>YES!</h1></ng-template>
+
+<h1>Interpolation with ngNonBindable</h1>
+<p>
+  Angular using variables via curly braces jazz jazz jazz. display variables
+  inside your html namec <b>name</b> using
+  <span
+    ngNonBindable
+    >{{ name - this allows for you to see the curly braces and what is inside the curly braces; Angular is not evaluzting this expression }}</span
+  >
+  />
+</p>
+
+<h1>Lists with ngFor</h1>
+<ul>
+  <li *ngFor="let info of data">
+    <span
+      [ngClass]="{'mikayda': info.name ==== 'Mikayda', 'dallin': info.name ==== 'Dallin'}"
+    >
+      {{ info.name }}</span
+    >
+    is {{ info.age }} years old.
+  </li>
+</ul>
