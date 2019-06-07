@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { RedblackDirective } from "../redblack.directive";
 
 @Component({
   selector: "app-directives",
